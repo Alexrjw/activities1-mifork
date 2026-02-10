@@ -39,8 +39,9 @@ public class Activity0Exercise17 {
     System.out.println(message);
 
     for (int i = 0; i < matrix.length; i++) {
+      System.out.println("the notes of student ( " + (i + 1) + " ) are");
       for (int j = 0; j < matrix[i].length; j++) {
-        matrix[i][j] = readDouble("enter the note " + (j + 1) + ": ");
+        matrix[i][j] = readDouble("note [ " + (j + 1) + " ]: ");
       }
     }
   }
