@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Activity0Exercise17 {
-  
+  static Scanner input = new Scanner(System.in);
   //exercise 17
   /**
    * muestra un mensaje por pantalla y lee un número entero de teclado
@@ -13,7 +13,8 @@ public class Activity0Exercise17 {
    * @return el número entero leido de teclado
    */
   public static int readNumber(String message) {
-    return 0;
+    System.out.println(message);
+    return Integer.parseInt(input.nextLine());
   }
   
   /**
@@ -22,7 +23,8 @@ public class Activity0Exercise17 {
    * @return el número real leido de teclado
    */
   public static double readDouble(String message) {
-    return 0;
+    System.out.println(message);
+    return Double.parseDouble(input.nextLine());
   }
 
  
@@ -32,7 +34,10 @@ public class Activity0Exercise17 {
    * @param message el mensaje a visualizar
    */
   public static void readNotes(double[][] matrix, String message) {
-    
+    System.out.println(message);
+    for (int i = 0; i < matrix.length; i++) {
+      matrix[i][i] = readDouble("Ingresa numero");
+    }
   }
   
   /**
@@ -42,5 +47,6 @@ public class Activity0Exercise17 {
    */
   public static void printNotes(double[][] matrix, String message){
     
+    input.close();
   }
 }
