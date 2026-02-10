@@ -1,7 +1,6 @@
 
 package es.uvigo.esei.aed1.activity0.exercise17;
 
-import java.nio.channels.Pipe.SourceChannel;
 import java.util.Scanner;
 
 public class Activity0Exercise17 {
