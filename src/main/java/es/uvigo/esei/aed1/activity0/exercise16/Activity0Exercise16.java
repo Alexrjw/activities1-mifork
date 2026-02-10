@@ -16,7 +16,7 @@ public class Activity0Exercise16 {
   public static int maximum(int[] array) {
     int mayor = array[0];
 
-    for (int i = 1; i < array.length - 1; i++) {
+    for (int i = 1; i < array.length; i++) {
       if (mayor < array[i]) {
         mayor = array[i];
       }
@@ -33,7 +33,7 @@ public class Activity0Exercise16 {
   public static int minimum(int[] array) {
     int menor = array[0];
 
-    for (int i = 1; i < array.length - 1; i++) {
+    for (int i = 1; i < array.length; i++) {
       if (menor > array[i]) {
         menor = array[i];
       }
@@ -48,12 +48,12 @@ public class Activity0Exercise16 {
    * @return el valor promedio
    */
   public static double average(int[] array) {
-    int average = 0;
+    int average = array[0];
 
-    for (int i = 1; i < array.length - 1; i++) {
+    for (int i = 1; i < array.length; i++) {
       average += array[i];
     }
-    return average;
+    return (double) average / array.length;
   }
 
   public static int readInteger(String message) {
