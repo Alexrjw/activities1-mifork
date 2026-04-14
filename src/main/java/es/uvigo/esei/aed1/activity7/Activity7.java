@@ -107,7 +107,7 @@ public class Activity7 {
 
     for (Integer number : list) {
       if (number == suma) {
-        couter ++;
+        couter++;
       }
       suma += number;
     }
@@ -129,13 +129,13 @@ public class Activity7 {
   public static Integer getMorePatients(Hospital chuo) {
 
     Iterator<Doctor> doctores = chuo.getDoctors().iterator();
-    
+
     Doctor doctorMayor = doctores.next();
 
-    while (doctores.hasNext()) {  
+    while (doctores.hasNext()) {
       Doctor doctorSiguiente = doctores.next();
       if (doctorMayor.getPatients().size() <= doctorSiguiente.getPatients().size()) {
-        doctorMayor = doctorSiguiente;        
+        doctorMayor = doctorSiguiente;
       }
     }
 
