@@ -25,7 +25,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 
-
 public class Activity5Test {
 
   private Stack<Integer> stack;
@@ -188,15 +187,13 @@ public class Activity5Test {
   public void testUnstackAnItemNull() {
     stack = null;
 
-    assertThrows(NullPointerException.class, ()
-            -> unstackAnItem(stack, 3));
+    assertThrows(NullPointerException.class, () -> unstackAnItem(stack, 3));
   }
 
   @Test
   public void testUnstackAnItemIllegal() {
 
-    assertThrows(IllegalArgumentException.class, ()
-            -> unstackAnItem(stack, 0));
+    assertThrows(IllegalArgumentException.class, () -> unstackAnItem(stack, 0));
 
   }
 
@@ -305,8 +302,7 @@ public class Activity5Test {
     Integer oldValue = 2;
     Integer newValue = 12;
 
-    assertThrows(NullPointerException.class, ()
-            -> replaceValues(stack, oldValue, newValue));
+    assertThrows(NullPointerException.class, () -> replaceValues(stack, oldValue, newValue));
   }
 
   @Test
@@ -326,8 +322,7 @@ public class Activity5Test {
   public void testPushValuesLimitedNull() {
     stack = null;
 
-    assertThrows(NullPointerException.class, ()
-            -> pushValuesLimited(stack, 2));
+    assertThrows(NullPointerException.class, () -> pushValuesLimited(stack, 2));
   }
 
   @Test
